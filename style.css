@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container{
+    background: url(images/background.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    padding: 2rem 7%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+.navbar a{
+    color: white;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+.icon{
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar.active{
+left: 0;
+transition: .5s;
+}
+.background-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.background-text h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 31px;
+}
+.background-text h2{
+    font-size: 38px;
+}
+.background-text p{
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+.background-text a{
+    font-size: 2rem;
+    color: white;
+    padding: 1.5rem 3rem;
+    border: 1px solid white;
+}
+.our-dishes{
+    padding: 2rem 7%;
+    background: #333;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.our-dishes .inner-box{
+    flex: 1 1 40rem;
+    background: #9999;
+}
+.our-dishes .inner-box .item-image img{
+    width: 100%;
+}
+.inner-box .box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 2rem;
+    color: white;
+    text-align: center;
+}
+.inner-box .box h1{
+    font-size: 31px;
+    padding: .5rem;
+}
+.inner-box .box p{
+    font-size: 18px;
+    padding-bottom: 2rem;
+}
+
+.inner-box .box a{
+    padding: 1.5rem 3rem;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    color: white;
+
+}
+.reservation{
+    padding: 3rem 7%;
+}
+.reservation-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.inner-reservation{
+    flex: 1 1 280px;
+    padding: 4rem 2rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+
+}
+.inner-reservation i{
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.inner-reservation i:hover{
+    transform: rotate(360deg) scale(2);
+}
+.inner-reservation p{
+    font-size: 1.5rem;
+}
+.make-reservation{
+    background: url(images/backgroundimage2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.inside-text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inside-text h1{
+    font-family: 'parisienne', cursive;
+    font-size: 31px;
+    padding: .5rem;
+}
+.inside-text h2{
+   
+    font-size: 38px;
+    padding-bottom: 1rem;
+}
+.inside-text a{
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border: 1px solid white;
+}
+.inside-text a:hover{
+    background-color: #f8b864;
+}
+.food-prices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 2rem;
+}
+.food-items{
+    flex: 1 1 300px;
+    text-align: center;
+    position: relative;
+}
+.food-items img{
+    width: 100%;
+}
+.food-text{
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.food-text h1{
+    font-size: 30px;
+
+}
+.food-text h3{
+    font-size: 18px;
+}
+.food-text h2{
+    font-size: 33px;
+}
+.footer h1{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    padding: 3rem 0;
+}
+.footer{
+    width: 97%;
+    margin: 0 auto;
+    background: #333;
+ 
+}
+.inner-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   margin-left: 100px;
+}
+.inner-links{
+    flex: 1 1 280px;
+}
+.inner-links a{
+    display: block;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem;
+   
+}
+.inner-links a:hover{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .icon{
+        display: inline-block;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: 50%;
+        text-align: center;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.7rem;
+        color: black;
+        padding: 2rem;
+        margin: 1rem;
+        background: rgba(255, 255, 255, .3);
+        border-radius: 15px;
+    }
+    .background-text{
+        width: 100%;
+    }
+    .inner-box .box{
+        height: 300px;
+        padding: 2rem 2rem;
+    }
+    .food-prices{
+        padding: 0;
+    }
+}
+@media (max-width:991px){
+html{
+    font-size: 55%;
+}
+}
+
+
+
